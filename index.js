@@ -23,7 +23,7 @@ app.use(
 );
 
 app.get('/api/cheeses', (req, res) => {
-  console.log( [
+  const cheeses = ( [
     'Bath Blue',
     'Barkham Blue',
     'Buxton Blue',
@@ -42,7 +42,7 @@ app.get('/api/cheeses', (req, res) => {
     'Blue Wensleydale',
     'Yorkshire Blue'
   ]);
-  res.json({message:'hi'});
+  res.json(cheeses);
 });
 
 
